@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>what do you think</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: repeat(2,100px);
+            gap: 7px;
+        }
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+            font-weight: bold;
+        }
+        .i1{
+            order: 8;
+        }
+        .i2{
+            order: 2;
+        }
+        .i3{
+            order: 1;
+        }
+        .i4{
+            order: 3;
+        }
+        .i5{
+            order: 7;
+        }
+        .i6{
+            order: 4;
+        }
+        .i7{
+            order: 5;
+        }
+        .i8{
+            order: 6;
+        }
+    </style>
+</head>
+<body>
+ <h2>What do you think!</h2>
+      <div class="container">
+         <div class="item i1">1</div>
+         <div class="item i2">2</div>
+         <div class="item i3">3</div>
+         <div class="item i4">4</div>
+         <div class="item i5">5</div>
+         <div class="item i6">6</div>
+         <div class="item i7">7</div>
+         <div class="item i8">8</div>
+      </div>
+</body>
+</html>

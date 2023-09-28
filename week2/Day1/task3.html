@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/62ed9ebe37.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sec1 {
+            display: flex;
+            width: 60%;
+            justify-content: space-around;
+            padding-left: 20%;
+        }
+
+        .items {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: 4fr 2fr;
+            gap: 15px;
+            height: 100%;
+        }
+
+        .side-bar {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            border: solid rgb(126, 182, 126);
+        }
+
+        .side-bar div {
+            height: 8.3%;
+            padding-left: 8%;
+        }
+
+        .header-sidebar {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .right-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .up {
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .down {
+            background-image: url("banner.jpg");
+            height: 80%;
+        }
+        .fruit{
+          width: 30%;
+          height: 70%;
+          margin: 5% 0% 0% 5%;
+          display: flex;
+          flex-direction: column;
+        }
+        .bottom-container {
+            margin-top: 2%;
+            grid-area: 2/1/3/3;
+            display: flex;
+            gap: 25px;
+            justify-content: space-around;
+        }
+        .bottom-container div{
+            width: 20%;
+            background-image: url("fruit.jpg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bottom-container div span{
+            margin-top: 50%;
+            background-color: white;
+            padding: 3%;
+        }
+        @media (min-width:608px) and (max-width:657){
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father-container">
+        <div class="header">
+            <div class="sec1">
+                <span>HOME</span>
+                <span>SHOP</span>
+                <span>PAGES</span>
+                <span> BLOG</span>
+                <span>CONTACT</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-heart"></i><sup><i class="fa-solid fa-circle" style="color: #2caf3b;"></i></sup>
+                <i class="fa-solid fa-briefcase"></i><sup><i class="fa-solid fa-circle"
+                        style="color: #2caf3b;"></i></sup>
+                <span>item:<b>$150.00</b></span>
+            </div>
+        </div>
+        <div class="items">
+            <div class="side-bar">
+                <div style="background-color: #2caf3b; color: aliceblue;" class="header-sidebar">
+                    <span><i class="fa-solid fa-bars" style="color: #e9ecf1;"></i></span>
+                    <span>All Department</span>
+                    <span><i class="fa-solid fa-caret-down" style="color: #e4e7ec;"></i></span>
+                </div>
+                <div><span>Fresh Meat</span></div>
+                <div><span>Vegetables</span></div>
+                <div><span>Nuts&Gifts</span></div>
+                <div><span>Fresh Berries</span></div>
+                <div><span>Ocean Foods</span></div>
+                <div><span>Butter&Eggs</span></div>
+                <div><span>FastFood</span></div>
+                <div><span>Fresh Onion</span></div>
+                <div><span>Papaya&Crisps</span></div>
+                <div><span>Oatmeal</span></div>
+                <div><span>Fresh Bananas</span></div>
+            </div>
+            <div class="right-container">
+                <div class="up">
+                    <div style="width: 70%;">
+                        <select title="All">
+                            <option>All</option>
+                            <option>Recent</option>
+                            <option>Popular</option>
+                        </select>
+                        <input type="text" class="input" placeholder="Search">
+                        <span style="background-color: #2caf3b; color:white;">SEARCH</span>
+                    </div>
+                    <div style="display: flex;"> <img src="phone.png" alt="phone" height="60%" style="margin-top: 5%;"><p><b>+65 11.88.888</b><br>Support 24/7 time</p></div>
+                </div>
+                <div class="down">
+                    <div class="fruit">
+                        <span style="color: #2caf3b;">FRUIT FRESH</span>
+                        <h1>Vegetable<br> 100% Organic</h1>
+                        <span >Free Pickup and Delivery Available</span>
+                        <span style="background-color: #2caf3b;color: #e4e7ec;width: fit-content; margin-top: 10%;padding: 3%;">Shop now</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-container">
+                <div><span>Vegetables</span></div>
+                <div><span>Vegetables</span></div>
+                <div><span>Vegetables</span></div>
+                <div><span>Vegetables</span></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

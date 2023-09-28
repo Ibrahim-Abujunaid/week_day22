@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+       .father{
+        display: grid;
+        grid-template-rows: 450px 100px;
+        gap: 10px;
+       }
+       .container1{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        
+       }
+       .container1 div{
+        background-color: aqua;
+       }
+       .img1{
+         grid-area: 1/1/3/2;
+       }
+       .container2{
+         display: grid;
+         grid-template-columns: repeat(5,1fr);
+         gap: 10px;
+       }
+       .container2 div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+       }
+       .img1{
+        background-image: url("carry.jpg");
+       }
+        
+    </style>
+</head>
+<body>
+   <div class="father">
+      <div class="container1">
+           <div class="img1">
+            <h5>Offers& Services</h5>
+            <h1>Offers and <br>Services</h1>
+            <h4>Stay connected to<br>people in your life</h4>
+            <p>Best 4G+ and unlimited internet<br>bundles and features with Orange<br>Mobile Lines</p>
+           </div>
+           <div><img src="popcorn.jfif" alt="popcorn" width="100%"></div>
+           <div>
+            <h2>Orange Extra</h2>
+            <p>Enjoy the unlimited experience of sfestyle & leisure with youre orange internet subscribtion</p>
+            <hr width="10px">
+            <h4>Explore More</h4>
+           </div>
+           <div>
+            <h2>Smart Life</h2>
+            <p>wide selection of smart life devices to make your life easier from orange</p> 
+            <hr width="10px">
+            <h5>Extra promotions</h5>
+           </div>
+           <div><img src="carry.jpg" alt="" width="100%" height="190px"></div>
+      </div>
+      <div class="container2">
+           <div>  
+            <img src="device2.png" alt="Mobile">
+            <span>Mobile Offers</span>
+           </div>
+           <div>
+            <img src="planet.png" alt="planet"><span>internet Offers</span>
+           </div>
+           <div>
+            <img src="device.png" alt="device"><span>devices</span>
+           </div>
+           <div><img src="airplan.png" alt="airplane">International&<br>Roaming</div>
+           <div>
+            <img src="fixed.png" alt="fixed"><span>Fixes Lines</span>
+           </div>
+      </div>
+   </div>
+</body>
+</html>

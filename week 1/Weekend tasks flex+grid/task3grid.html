@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nested grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,370px);
+            grid-template-rows: repeat(3,230px);
+            gap: 5px;
+        }
+        .item{
+            background-color: gainsboro;
+            padding: 10px;
+        }
+         .container1{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+         }
+         .subitem{
+            background-color: gray;
+         }
+         .container3{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+         }
+         .container4{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="item">item1</div>
+       <div class="item container1">
+         <div class="subitem">sub1</div>
+          <div class="subitem">sub2</div>
+           <div class="subitem">sub3</div>
+            <div class="subitem">sub4</div>
+       </div>
+       <div class="item container1">
+         <div class="subitem">sub1</div>
+          <div class="subitem">sub2</div>
+           <div class="subitem">sub3</div>
+            <div class="subitem">sub4</div>
+       </div>
+       <div class="item">item4</div>
+       <div class="item">item5</div>
+       <div class="item container3">
+          <div class="subitem">sub1</div>
+          <div class="subitem">sub2</div>
+       </div>
+       <div class="item container4">
+         <div class="subitem">sub1</div>
+         <div class="subitem">sub2</div>
+       </div>
+       <div class="item">item8</div>
+       <div class="item container1">
+         <div class="subitem">sub1</div>
+          <div class="subitem">sub2</div>
+           <div class="subitem">sub3</div>
+            <div class="subitem">sub4</div>
+       </div>
+       <div class="item">item10</div>
+       <div class="item">item11</div>
+       <div class="item  container1">
+         <div class="subitem">sub1</div>
+          <div class="subitem">sub2</div>
+           <div class="subitem">sub3</div>
+            <div class="subitem">sub4</div>
+       </div>
+    </div>
+    
+</body>
+</html>

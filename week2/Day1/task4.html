@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/62ed9ebe37.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 7px 13px 3px 1px rgba(56, 52, 52, 0.61);
+            flex-wrap: wrap;
+        }
+
+        .sec1 {
+            display: flex;
+            width: 60%;
+            justify-content: space-around;
+            padding-left: 20%;
+            align-items: center;
+            flex-wrap: wrap;
+            min-width: 300px;
+        }
+
+        .karma {
+            width: 20%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .header2 {
+            margin-top: 2%;
+            background-color: rgb(197, 197, 197);
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0% 25% 0% 25%;
+        }
+
+        .header2 span {
+            background-color: white;
+            padding: 2%;
+        }
+
+        .container {
+            padding-top: 3%;
+            display: flex;
+            gap: 10px;
+        }
+
+        .sub1 {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 100%;
+            gap: 15px;
+
+        }
+
+        .first-item {
+            display: flex;
+            gap: 10px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .sub2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+        }
+        @media (max-width:611px) {
+            .container{
+                flex-wrap: wrap-reverse;
+            }
+            .sub2{
+                width: 90%;
+            }
+            .sub1{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="header">
+            <div class="karma">
+                <img src="karma.png" alt="karma">
+                <span><b>Karma</b></span>
+            </div>
+            <div class="sec1">
+                <span>HOME</span>
+                <span style="color: orange;">SHOP</span>
+                <span>PAGES</span>
+                <span> BLOG</span>
+                <span>CONTACT</span>
+                <span><i class="fa-solid fa-bag-shopping"></i></span>
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+        </div>
+        <div class="header2">
+            <span>Description</span>
+            <span>Specification</span>
+            <span>Comments</span>
+            <span style="background-color: orange;">Reviews</span>
+        </div>
+        <div class="container">
+            <div class="sub1">
+                <div class="first-item">
+                    <div
+                        style="display: flex;flex-direction: column;justify-content: center; align-items: center;font-size: xx-large; width: 50%;background-color: rgb(174, 174, 174);">
+                        <span><b>Overall</b></span>
+                        <span style="color: orange;">4.0</span>
+                        <span>(03 Reviews)</span>
+                    </div>
+                    <div style="display: flex;flex-direction: column;width: 50%;">
+                        <h3>Based on 3 Reviews</h3>
+                        <span>5star⭐⭐⭐⭐⭐01</span>
+                        <span>4star⭐⭐⭐⭐⭐01</span>
+                        <span>3star⭐⭐⭐⭐⭐01</span>
+                        <span>2star⭐⭐⭐⭐⭐01</span>
+                        <span>1star⭐⭐⭐⭐⭐01</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="profile">
+                        <div><img src="blake.png" alt="blake"></div>
+                        <div style="display: flex;flex-direction: column-reverse;"><span>Blake
+                                ruis</span><span>⭐⭐⭐⭐⭐</span></div>
+                    </div>
+                    <div class="comment">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, nobis laudantium.
+                        Repellendus, odio nesciunt! Natus exercitationem atque ex delectus hic commodi odit, vel,
+                        consectetur cumque placeat aut optio necessitatibus. Eum?
+                    </div>
+                </div>
+                <div>
+                    <div class="profile">
+                        <div><img src="blake.png" alt="blake"></div>
+                        <div style="display: flex;flex-direction: column-reverse;"><span>Blake
+                                ruis</span><span>⭐⭐⭐⭐⭐</span></div>
+                    </div>
+                    <div class="comment">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, nobis laudantium.
+                        Repellendus, odio nesciunt! Natus exercitationem atque ex delectus hic commodi odit, vel,
+                        consectetur cumque placeat aut optio necessitatibus. Eum?
+                    </div>
+                </div>
+                <div>
+                    <div class="profile">
+                        <div><img src="blake.png" alt="blake"></div>
+                        <div style="display: flex;flex-direction: column-reverse;"><span>Blake
+                                ruis</span><span>⭐⭐⭐⭐⭐</span></div>
+                    </div>
+                    <div class="comment">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, nobis laudantium.
+                        Repellendus, odio nesciunt! Natus exercitationem atque ex delectus hic commodi odit, vel,
+                        consectetur cumque placeat aut optio necessitatibus. Eum?
+                    </div>
+                </div>
+            </div>
+            <div class="sub2">
+                <div>
+                    <h2>Add a Review</h2>
+                    <p>Your Rating:⭐⭐⭐⭐⭐ Outaiding</p>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <form style="display: grid; grid-template-rows:1fr 1fr 1fr 4fr; gap: 3px;">
+                        <input type="text" value="Your full Name">
+                        <input type="text" value="Email Adress">
+                        <input type="text" value="Phone Number">
+                        <input type="text" value="Review">
+                    </form>
+                    <span
+                        style="background-color: orange;color: white; width: 18%;padding:1%;margin: 3% 0% 0% 75%;">Submit
+                        Now</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

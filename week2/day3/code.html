@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/62ed9ebe37.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*-------------------------------------header--------------------*/
+        .header {
+            color: #dfe4ec;
+            background-color: rgb(14, 178, 215);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left-u {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left-h {
+            width: 50%;
+        }
+
+        .right-h {
+            width: 15%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-right: 3%;
+        }
+
+        .right-h span {
+            border: 2px solid white;
+            border-radius: 4px;
+        }
+
+        /* --------------------------First container--------------------------------*/
+        .first-container {
+            background-color: rgb(43, 2, 97);
+            color: white;
+            display: flex;
+        }
+
+        .left-fc {
+            width: 30%;
+            padding: 4% 0% 0% 10%;
+        }
+
+        .right-fc {
+            width: 55%;
+        }
+
+        .presented {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-right: 35%;
+        }
+
+        .presented img {
+            width: 40px;
+        }
+
+        /*---------------------------second container----------------------*/
+        .second-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .numbers {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .numbers div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .numbers div h2 {
+            font-size: 40px;
+        }
+
+        /*---------------------third-container----------------------*/
+        .third-container {
+            display: flex;
+            background-image: url("images/back.png");
+            color: white;
+            padding: 0% 20% 0% 20%;
+        }
+
+        /*-----------------------fourth container---------------------*/
+        .fourth-container {
+            display: flex;
+            gap: 5px;
+            justify-content: space-between;
+        }
+
+        .flex-container {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 350px;
+            color: white;
+            font-size: x-large;
+
+        }
+
+        .image {
+            width: 100%;
+            height: 46%;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+
+        }
+
+        /*----------------------------fifth container-------------*/
+        .fifth-container {
+            margin-top: 10px;
+            background-color: orange;
+            color: white;
+            display: flex;
+            justify-content: center;
+            font-size: x-large;
+        }
+
+        /*---------------------------------sixth container---------------*/
+        .sixth-container {
+            display: flex;
+        }
+
+        /*---------------------------------seventh contaitner-----------*/
+        .seventh-contaitner {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            font-size: x-large;
+        }
+
+        /*---------------------Footer-------------------------*/
+        .footer {
+            display: flex;
+            gap: 5px;
+            background-color: #292F36;
+            height: 30vh;
+            padding: 1% 2% 0% 10%;
+        }
+
+        .left-foo {
+            width: 70%;
+        }
+        .social{
+            display: flex;
+            justify-content: space-around;
+        }
+        @media (max-width: 700px){
+            .left-h{
+                display: none;
+            }
+             .first-container{
+                flex-direction: column;
+             }
+             .left-fc{
+                width: 100%;
+             }
+             .right-fc{
+                width: 100%;
+             }
+            .fourth-container{
+                flex-wrap: wrap;
+            }
+            .flex-container{
+                width: 49%;
+            }
+            .numbers{
+                flex-wrap: wrap;
+            }
+            .numbers div{
+               width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big-container">
+        <div class="header">
+            <div class="left-h">
+                <ul class="left-u" style="list-style: none;">
+                    <li><img src="images/ceo header.png" alt="ceo"></li>
+                    <li>Learn</li>
+                    <li>Teach</li>
+                    <li>Projects</li>
+                    <li>Stats</li>
+                    <li>Help us</li>
+                    <li>Incubator</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="right-h">
+                <span>Create <i class="fa-solid fa-sort-down" style="color: #dfe4ec;"></i></span>
+                <span>Sign in</span>
+                <span style="border: none;"><i class="fa-solid fa-circle-question fa-fade"
+                        style="color: #e1e4e5;"></i></i></span>
+            </div>
+        </div>
+        <div class="first-container">
+            <div class="left-fc">
+                <h2>AI101 for Teachers</h2>
+                <p>Discover the groundbreaking world of artificial intelligence (AI)<br> and its transformative
+                    potential in
+                    edication with our foundational online learning series for teachers.</p>
+                <div class="presented"><span>Presented by</span> <span><img src="images/ceo f.png" alt="ceo"></span>
+                    <span><img src="images/ets--w.png" alt="ets"></span> <span><img src="images/iste--w.png"
+                            alt="ist"></span> <span><img src="images/khan--w.png" alt="khan" height="10"></span>
+                </div>
+                <button type="button">Learn More</button>
+
+            </div>
+            <div class="right-fc">
+                <img src="images/hajjeh.png" alt="hajjeh" width="80%">
+            </div>
+        </div>
+        <div class="second-container">
+            <p>Every student in every school should have the opportunity to learn computer science</p>
+            <div class="numbers">
+                <div>
+                    <h2>80M</h2><span>Student on code.org</span>
+                </div>
+                <div>
+                    <h2>30M</h2><span>Of our student is young women</span>
+                </div>
+                <div>
+                    <h2>262M</h2><span>Project created on code.org</span>
+                </div>
+                <div>
+                    <h2>2M</h2><span>Teachers use code.org</span>
+                </div>
+                <div>
+                    <h2>50</h2><span>All 50 states support computer science</span>
+                </div>
+            </div>
+            <p style="display: flex;justify-content: center; align-items: center;"><img src="images/third ceo.png"
+                    alt="ceo">Code.org is 10 years old! <a href="#zft">Check Out the impact we've had</a></p>
+        </div>
+        <div class="third-container">
+            <div style="width: 25%;"><img src="images/computer.png" alt="computer" height="100" width="100"></div>
+            <div style="width: 50%; display: flex;justify-content: center;align-items: center;">
+                <p><b><span>Introducing incredible updates to our curriculum</span></b><br>
+                    Updates to CSC, CSP, CSD, and more — plus a new Curriculum Catalog and redesigned Teach page to
+                    help you find it all!</p>
+            </div>
+            <div style="width: 25%;padding-top: 3%;"> <button type="button">Learn More</button></div>
+        </div>
+        <div class="fourth-container">
+            <div class="flex-container" style="background-color: aqua;">
+                <div class="image"><img src="images/kids.jpg" alt="kids"></div>
+                <div class="column">Hour of code</div>
+                <div class="column">Try the hour of code</div>
+                <div class="column">About the hour of code</div>
+                <div class="column">Host An hour of code</div>
+            </div>
+
+
+            <div class="flex-container" style="background-color: pink;">
+                <div class="image"><img src="images/bee.jpg" alt="kids"></div>
+                <div class="column">Students</div>
+                <div class="column">Try code studio</div>
+                <div class="column">Code with The Bad Guys</div>
+                <div class="column">Other online courses</div>
+            </div>
+
+
+            <div class="flex-container" style="background-color: aqua;">
+                <div class="image"><img src="images/learn.jpg" alt="kids"></div>
+                <div class="column">Educators</div>
+                <div class="column">Elementry school</div>
+                <div class="column">Middle school</div>
+                <div class="column">High school</div>
+            </div>
+
+
+            <div class="flex-container" style="background-color: rgb(224, 224, 172);">
+                <div class="image"><img src="images/usa.jpg" alt="kids"></div>
+                <div class="column">Get involved</div>
+                <div class="column">See the stats</div>
+                <div class="column">Bring cs to your school</div>
+                <div class="column">Donate</div>
+            </div>
+        </div>
+        <div class="fifth-container">
+            <h3><b>Over 262 million Code.org projects created</b></h3>
+        </div>
+        <div class="sixth-container">
+            <img src="images/bar1.png" alt="bar1" width="50%">
+            <img src="images/bar2.jpg" alt="bar2" width="50%">
+        </div>
+        <div class="seventh-contaitner">
+            <span><b>Code.org thanks</b></span>
+            <span>Amazon • The Ballmer Group • Coinbase • Google.org • Charlie Lee • Microsoft • Spiegel Family Fund •
+                Vista Equity Partners</span>
+            <button style="color: purple;" type="button">Donate</button>
+            <span><a style="color: purple;" href="#zft">See more supporters</a></span>
+        </div>
+        <div class="footer">
+            <div class="left-foo">
+                <ul style="display: flex;color: white;justify-content: space-between;list-style: none;">
+                    <li style="color: orange;">Privacy Policy</li>
+                    <li> Cookie Notice</li>
+                    <li> About</li>
+                    <li> Partners</li>
+                    <li> Blog</li>
+                    <li> Donate</li>
+                    <li> Store</li>
+                    <li> Support</li>
+                    <li> Terms</li>
+                </ul>
+                <p style="color: gray;padding-left: 4%;"><small>© Code.org, 2023. Code.org®, the CODE logo and Hour of
+                        Code® are trademarks of Code.org.<br>
+                        Built on GitHub from Microsoft</small></p>
+                <div><img src="images/Powered-By_logo-horiz_RGB_REV.png" alt="amazon" width="200" height="70"
+                        style="padding-left: 4%;"></div>
+            </div>
+            <div style="padding-top: 1%; width: 15%;">
+                <select name="language" value="English" style="width: 100%;">
+                    <option>English</option>
+                </select>
+                <div class="social"><span><i class="fa-brands fa-facebook-f" style="color: #f5f5f5;"></i></span><span><i
+                            class="fa-brands fa-twitter" style="color: #fcfcfc;"></i></span><span><i
+                            class="fa-brands fa-instagram" style="color: #e5e7eb;"></i></span><span><i
+                            class="fa-solid fa-m" style="color: #ffffff;"></i></span></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
